@@ -4,13 +4,13 @@
 
 1.  Descripción del componente Profile
 
--   El componente Profile utiliza el hook useSWR para realizar una petición GET a /api/profile cuando el componente se monta.
+    -   El componente Profile utiliza el hook useSWR para realizar una petición GET a /api/profile cuando el componente se monta.
 
--   En la función fetcher, se utiliza axios para realizar la petición GET. Después, se convierte la respuesta en formato JSON utilizando res.data de la respuesta de axios y se actualiza el estado del perfil con los datos obtenidos.
+    -   En la función fetcher, se utiliza axios para realizar la petición GET. Después, se convierte la respuesta en formato JSON utilizando res.data de la respuesta de axios y se actualiza el estado del perfil con los datos obtenidos.
 
--   El componente Profile renderiza los datos del perfil en función del estado actual. Si el perfil está cargando (es decir, profile es null), se muestra un mensaje de "Cargando perfil...". Una vez que se obtienen los datos del perfil, se muestra el nombre, la edad y el sexo del perfil.
+    -   El componente Profile renderiza los datos del perfil en función del estado actual. Si el perfil está cargando (es decir, profile es null), se muestra un mensaje de "Cargando perfil...". Una vez que se obtienen los datos del perfil, se muestra el nombre, la edad y el sexo del perfil.
 
--   En este ejemplo se asume que se tiene configurada una ruta /api/profile en el proyecto Next.js que devuelve el objeto {name: 'Alex', age:35, gender:'masculino'}. **Nota:** Puedes implementar la lógica para manejar esta ruta en la carpeta /pages/api de tu proyecto.
+    -   En este ejemplo se asume que se tiene configurada una ruta /api/profile en el proyecto Next.js que devuelve el objeto {name: 'Alex', age:35, gender:'masculino'}. **Nota:** Puedes implementar la lógica para manejar esta ruta en la carpeta /pages/api de tu proyecto.
 
 2.  Creación del componente con un custom hook que utiliza axios para la petición http
 
@@ -69,15 +69,15 @@
 
 4.  Prueba del componente
 
--   En esta prueba, estamos simulando la respuesta de la petición GET a /api/profile mediante el uso de jest.spyOn. Mockeamos la función fetch y configuramos un valor de retorno simulado que incluye los datos del perfil.
+    -   En esta prueba, estamos simulando la respuesta de la petición GET a /api/profile mediante el uso de jest.spyOn. Mockeamos la función fetch y configuramos un valor de retorno simulado que incluye los datos del perfil.
 
--   Luego, utilizamos render de React Testing Library para renderizar el componente Perfil. Verificamos que se haya realizado la petición GET esperada utilizando expect(global.fetch).toHaveBeenCalledWith('/api/profile').
+    -   Luego, utilizamos render de React Testing Library para renderizar el componente Perfil. Verificamos que se haya realizado la petición GET esperada utilizando expect(global.fetch).toHaveBeenCalledWith('/api/profile').
 
--   Después de renderizar el componente, verificamos que se muestre el mensaje "Cargando perfil...". A continuación, utilizamos waitFor de React Testing Library para esperar a que los datos del perfil se muestren en la pantalla. Dentro de la función de espera, verificamos que los elementos correspondientes a los datos del perfil estén presentes en la pantalla.
+    -   Después de renderizar el componente, verificamos que se muestre el mensaje "Cargando perfil...". A continuación, utilizamos waitFor de React Testing Library para esperar a que los datos del perfil se muestren en la pantalla. Dentro de la función de espera, verificamos que los elementos correspondientes a los datos del perfil estén presentes en la pantalla.
 
--   Esta prueba asegura que el componente Perfil realice la petición GET esperada, muestre el mensaje de carga y, finalmente, muestre los datos del perfil correctamente en la pantalla.
+    -   Esta prueba asegura que el componente Perfil realice la petición GET esperada, muestre el mensaje de carga y, finalmente, muestre los datos del perfil correctamente en la pantalla.
 
--   Recuerda que en este ejemplo estamos mockeando la respuesta de la petición GET para simular los datos del perfil. Asegúrate de ajustar el mock de acuerdo a tu implementación de la ruta /api/profile en tu proyecto Next.js.
+    -   Recuerda que en este ejemplo estamos mockeando la respuesta de la petición GET para simular los datos del perfil. Asegúrate de ajustar el mock de acuerdo a tu implementación de la ruta /api/profile en tu proyecto Next.js.
 
     ```javascript
     import Profile from "@/components/profile";
@@ -122,7 +122,7 @@
     });
     ```
 
-4.  Ejecución de las pruebas
+5.  Ejecución de las pruebas
 
     -   En la terminal, asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando para ejecutar las pruebas:
 
