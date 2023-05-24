@@ -1,5 +1,5 @@
 import Counter from "@/components/counter";
-import { render, fireEvent, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 test("increments and decrements the counter correctly", () => {
 	render(<Counter />);
