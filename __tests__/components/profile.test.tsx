@@ -14,8 +14,16 @@ describe("Profile", () => {
 	};
 
 	beforeAll(() => {
+		const HTTP_STATUS = 200;
+		const DELAY_IN_MS = 200;
 		// Configurar el mock para una petición GET a una URL específica
-		mock.onGet("/api/profile").reply(200, mockProfile);
+		mock.onGet("/api/profile").reply(async (config) => {
+			await ((delay: number) =>
+				new Promise((resolve) => setTimeout(resolve, delay)))(
+				DELAY_IN_MS
+			);
+			return [HTTP_STATUS, mockProfile];
+		});
 	});
 
 	it("debería mostrar los datos del perfil", async () => {
