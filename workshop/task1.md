@@ -11,7 +11,11 @@
     npx create-next-app --example with-jest with-jest-app
     ```
 
-2.  Creación de pruebas a un componente
+2.  Veamos un ejemplo de una prueba
+
+    `__tests__/index.test.tsx`
+
+3.  Creación de pruebas a un componente
 
     -   Crea un directorio llamado `__tests__` en la raíz del proyecto (si aún no existe).
     -   Dentro de `__tests__`, crea un archivo llamado components/counter.test.tsx.
@@ -42,7 +46,7 @@
     });
     ```
 
-3.  Componente que satisface las pruebas
+4.  Componente que satisface las pruebas
 
     ```javascript
     import { useState } from "react";
@@ -70,7 +74,7 @@
     export default Counter;
     ```
 
-4.  Ejecución de las pruebas
+5.  Ejecución de las pruebas
 
     -   En la terminal, asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando para ejecutar las pruebas:
 
@@ -79,3 +83,5 @@
     ```
 
 ¡Y eso es todo! Ahora deberías tener un entorno configurado para realizar pruebas unitarias en tu proyecto Next.ts. Puedes agregar más pruebas en el directorio **`__tests__`** siguiendo el mismo patrón que se muestra en el ejemplo.
+
+**[Siguiente Tarea](../../task2/workshop/task2.md))**
