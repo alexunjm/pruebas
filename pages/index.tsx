@@ -2,10 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 
 import styles from "@/pages/index.module.css";
-import Counter from "@/components/counter";
-import Profile from "@/components/profile";
+import JsonTable from "@/components/json-table";
 
 export default function Home() {
+	const jsonData = {
+		name: "John Doe",
+		age: 30,
+		email: "johndoe@example.com",
+	};
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -17,9 +21,10 @@ export default function Home() {
 				<h1 className={styles.title}>
 					Welcome to <a href="https://nextjs.org">Next.js!</a>
 				</h1>
-
+				{/* 
 				<Counter />
-				<Profile />
+				<Profile /> */}
+				<JsonTable data={jsonData} />
 			</main>
 
 			<footer className={styles.footer}>
