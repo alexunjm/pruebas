@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea6:** Compatibilidad con servicios o cambios externos
+## **Tarea 6:** Compatibilidad con servicios o cambios externos
 
 Veamos el numeral 7 de las consideraciones a la hora de hacer pruebas
 
@@ -75,3 +75,5 @@ describe("Greeting", () => {
 	});
 });
 ```
+
+**[Siguiente Tarea](../../task7/workshop/task7.md)**
