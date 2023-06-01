@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea5:** Consideraciones a la hora de realizar pruebas automatizadas
+## **Tarea 5:** Consideraciones a la hora de realizar pruebas automatizadas
 
 Cuando diseñas casos de prueba, es importante considerar diferentes variaciones para cubrir diversos escenarios y garantizar una cobertura adecuada. Aquí hay algunas cosas en las que puedes pensar para proponer variaciones en tus casos de prueba:
 
@@ -123,3 +123,5 @@ describe("TextInput", () => {
 });
 
 ```
+
+**[Siguiente Tarea](../../task6/workshop/task6.md)**
