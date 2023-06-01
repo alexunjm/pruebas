@@ -83,3 +83,5 @@
     ```
 
 ¡Y eso es todo! Ahora deberías tener un entorno configurado para realizar pruebas unitarias en tu proyecto Next.ts. Puedes agregar más pruebas en el directorio **`__tests__`** siguiendo el mismo patrón que se muestra en el ejemplo.
+
+**[Siguiente Tarea](../../tree/workshop/task2/workshop/task2)**
