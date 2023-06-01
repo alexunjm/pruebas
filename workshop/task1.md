@@ -4,8 +4,8 @@
 
 1.  Configuración inicial
 
-    -   Asegúrate de tener Node.ts y npm instalados en tu sistema.
-    -   Abre una terminal en el directorio y ejecuta el siguiente comando para inicializar un nuevo proyecto Next.ts:
+    -   Asegúrate de tener NodeJS y npm instalados en tu sistema.
+    -   Abre una terminal en el directorio y ejecuta el siguiente comando para inicializar un nuevo proyecto NextJS:
 
     ```bash
     npx create-next-app --example with-jest with-jest-app
