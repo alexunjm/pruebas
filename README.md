@@ -6,7 +6,7 @@ This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScri
 
 ## Spanish workshop
 
-[Click here to start](../tree/workshop/task1)
+[Click here to start](../workshop/task1/workshop/task1.md)
 
 ## How to Use
 
