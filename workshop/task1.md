@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea1:** Pruebas a un componente en un proyecto NextJS
+## **Tarea 1:** Pruebas a un componente en un proyecto NextJS
 
 1.  Configuración inicial
 
@@ -84,4 +84,4 @@
 
 ¡Y eso es todo! Ahora deberías tener un entorno configurado para realizar pruebas unitarias en tu proyecto Next.ts. Puedes agregar más pruebas en el directorio **`__tests__`** siguiendo el mismo patrón que se muestra en el ejemplo.
 
-**[Siguiente Tarea](../../task2/workshop/task2.md))**
+**[Siguiente Tarea](../../task2/workshop/task2.md)**
