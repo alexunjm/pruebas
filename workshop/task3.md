@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea3:** Prueba componente tabla que pinta las key values de un objeto json
+## **Tarea 3:** Prueba componente tabla que pinta las key values de un objeto json
 
 Este ejemplo renderiza un componente JsonTable y recibe un objeto JSON jsonData como prop.
 
@@ -108,3 +108,5 @@ describe("JsonTable", () => {
 	});
 });
 ```
+
+**[Siguiente Tarea](../../task4/workshop/task4.md)**
