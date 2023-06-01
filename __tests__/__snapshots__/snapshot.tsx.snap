@@ -16,21 +16,6 @@ exports[`renders homepage unchanged 1`] = `
           Next.js!
         </a>
       </h1>
-      <div>
-        <h1>
-          Contador: 
-          0
-        </h1>
-        <button>
-          Disminuir
-        </button>
-        <button>
-          Aumentar
-        </button>
-      </div>
-      <div>
-        Cargando perfil...
-      </div>
     </main>
     <footer
       class="footer"

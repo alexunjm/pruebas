@@ -23,8 +23,9 @@ export default function Home() {
 				</h1>
 				{/* 
 				<Counter />
-				<Profile /> */}
+				<Profile />
 				<JsonTable data={jsonData} />
+				 */}
 			</main>
 
 			<footer className={styles.footer}>
