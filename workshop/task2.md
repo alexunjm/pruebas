@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea2:** Prueba componente y mockeo de api rest
+## **Tarea 2:** Prueba componente y mockeo de api rest
 
 1.  Descripción del componente Profile
 
@@ -130,4 +130,4 @@
     npm test
     ```
 
-**[Siguiente Tarea](../../tree/workshop/task3/workshop/task3)**
+**[Siguiente Tarea](../../task3/workshop/task3.md)**
