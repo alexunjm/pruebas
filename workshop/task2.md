@@ -69,16 +69,6 @@
 
 4.  Prueba del componente
 
-    -   En esta prueba, estamos simulando la respuesta de la petición GET a /api/profile mediante el uso de jest.spyOn. Mockeamos la función fetch y configuramos un valor de retorno simulado que incluye los datos del perfil.
-
-    -   Luego, utilizamos render de React Testing Library para renderizar el componente Perfil. Verificamos que se haya realizado la petición GET esperada utilizando expect(global.fetch).toHaveBeenCalledWith('/api/profile').
-
-    -   Después de renderizar el componente, verificamos que se muestre el mensaje "Cargando perfil...". A continuación, utilizamos waitFor de React Testing Library para esperar a que los datos del perfil se muestren en la pantalla. Dentro de la función de espera, verificamos que los elementos correspondientes a los datos del perfil estén presentes en la pantalla.
-
-    -   Esta prueba asegura que el componente Perfil realice la petición GET esperada, muestre el mensaje de carga y, finalmente, muestre los datos del perfil correctamente en la pantalla.
-
-    -   Recuerda que en este ejemplo estamos mockeando la respuesta de la petición GET para simular los datos del perfil. Asegúrate de ajustar el mock de acuerdo a tu implementación de la ruta /api/profile en tu proyecto Next.js.
-
     ```javascript
     import Profile from "@/components/profile";
     import { render, screen, waitFor } from "@testing-library/react";
@@ -121,6 +111,16 @@
     	});
     });
     ```
+
+    -   En esta prueba, estamos simulando la respuesta de la petición GET a /api/profile mediante el uso de axios-mock-adapter. Mockeamos el objeto axios y configuramos un valor de retorno simulado que incluye los datos del perfil.
+
+    -   Luego, utilizamos render de React Testing Library para renderizar el componente Perfil. Verificamos que se haya realizado la petición GET esperada utilizando expect(global.fetch).toHaveBeenCalledWith('/api/profile').
+
+    -   Después de renderizar el componente, verificamos que se muestre el mensaje "Cargando perfil...". A continuación, utilizamos waitFor de React Testing Library para esperar a que los datos del perfil se muestren en la pantalla. Dentro de la función de espera, verificamos que los elementos correspondientes a los datos del perfil estén presentes en la pantalla.
+
+    -   Esta prueba asegura que el componente Perfil realice la petición GET esperada, muestre el mensaje de carga y, finalmente, muestre los datos del perfil correctamente en la pantalla.
+
+    -   Recuerda que en este ejemplo estamos mockeando la respuesta de la petición GET para simular los datos del perfil. Asegúrate de ajustar el mock de acuerdo a tu implementación de la ruta /api/profile en tu proyecto Next.js.
 
 5.  Ejecución de las pruebas
 
