@@ -1,6 +1,6 @@
 # Taller
 
-## **Tarea7:** Invitación a profundizar más sobre las pruebas y su importancia en el ciclo de vida del desarrollo de software
+## **Tarea 7:** Invitación a profundizar más sobre las pruebas y su importancia en el ciclo de vida del desarrollo de software
 
 Por lo pronto, aquí hay algunos aspectos adicionales importantes a tener en cuenta al realizar pruebas:
 
@@ -17,3 +17,9 @@ Por lo pronto, aquí hay algunos aspectos adicionales importantes a tener en cue
 6. **Revisión de cobertura de código**: Utiliza herramientas de cobertura de código para asegurarte de que tus pruebas cubran todas las partes importantes del código. Esto te ayuda a identificar áreas no probadas y garantizar una cobertura adecuada.
 
 Recuerda que las pruebas son una herramienta importante para garantizar la calidad del código y prevenir regresiones. Cuanto más completas y exhaustivas sean tus pruebas, más confianza tendrás en el funcionamiento de tu componente o aplicación.
+
+-   En la terminal, asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando para ejecutar las pruebas:
+
+    ```bash
+    npm test:cov
+    ```
